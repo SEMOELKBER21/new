@@ -13023,24 +13023,23 @@ end
 return send(msg_chat_id,msg_id,"["..text.."]","md",true)  
 end
 -------
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local Text =[[
-𝁂 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗘𝗟𝗡𝗚𝗢𝗢𝗠  𝁂
-
-𝁂 Files : [ Group ⋮](https://t.me/T_S_T1) 𝁂
-
-𝁂 TwisL : [ Dev SEMO ⋮](https://t.me/S_E_M_O_E_L_K_B_E_R) 𝁂
-
-𝁂 Channel : [ Team ElNgOoM ⋮](https://t.me/SSE_MO) 𝁂
-]]
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local user_info = LuaTele.getUser(msg.sender.user_id)
+local first_name = user_info.first_name
+local RinkBot = msg.Name_Controller
+video = "https://t.me/WORLED_SEMO/160"
+local Name = '*- 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆 𝒆𝒙𝒆𝒕𝒆𝒓𝒍𝒂𝒙*\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text =  𝁂Source ElngOoM ⋮ , url = "https://t.me/SSE_MO"}
+{text = '• 𝒄𝒉 𝒔𝒐𝒖𝒓𝒄𝒆 ', url = 't.me/A2NAA'},{text = '• 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒓𝒔 ', url = "https://t.me/R_P_9"},
+},
+{
+{text = 'اضف البوت لمجموعتك ☑️', url = 't.me/'..UserBot..'?startgroup=new'},
 },
 }
-local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.. /sendvideo?chat_id=  .. msg.chat_id ..  &video=https://t.me/WORLED_SEMO/160&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local msgg = msg_id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Admin then
 return send(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص '..Controller_Num(7)..' * ',"md",true)  
@@ -13778,7 +13777,7 @@ local texting = {"‏من ترك أمرهُ لله، أعطاه الله فوق 
 "أنا بعتز بنفسي جداً كصاحب وشايف اللي بيخسرني ، بيخسر أنضف وأجدع شخص ممكن يشوفه . ",
 "فجأه جاتلى قافله ‏خلتنى مستعد أخسر أي حد من غير ما أندم عليه . ",
 "‏اللهُم قوني بك حين يقِل صبري... ",
-"‏يارب سهِل لنا كُل حاجة شايلين هَمها 💙‏ ",
+"‏يارب سهِل لنا كُل حاجة شايلين هَمها ??‏ ",
 "انا محتاج ايام حلوه بقي عشان مش نافع كدا ! ",
 "المشكله مش اني باخد قررات غلط المشكله اني بفكر كويس فيها قبل ما اخدها .. ",
 "تخيل وانت قاعد مخنوق كدا بتفكر فالمزاكره اللي مزكرتهاش تلاقي قرار الغاء الدراسه .. ",
