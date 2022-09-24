@@ -17294,21 +17294,9 @@ end
 end
 if text == '/start' then
 local photo = LuaTele.getUserProfilePhotos(itsFast)
-local ban = LuaTele.getUser(itsFast)
-local bain = LuaTele.getUser(msg.sender.user_id)
-Redis:sadd(itsFast..'Num:User:Pv',msg.sender.user_id)  
-if not msg.ControllerBot then
-if not Redis:get(itsFast.."Start:Bot") then
-if bain.username then
-banusername = '[@'..bain.username..']'
-else
-banusername = 'لا يوجد'
-end
-if bain.first_name then
-baniusername = '*['..bain.first_name..'](tg://user?id='..bain.id..')*'
-else
-baniusername = 'لا يوجد'
-end
+Redis:sadd(Fast..'Num:User:Pv',msg.sender.user_id)  
+if not msg.Devss then
+if not Redis:get(Fast.."Start:Bot") then
 local CmdStart = '*\n⁕ أهلآ بك في بوت '..(Redis:get(itsFast.."Fast:Name:Bot") or "سيمو")..
 '\n⁕ اختصاص البوت حماية المجموعات'..
 '\n⁕ لتفعيل البوت عليك اتباع مايلي ...'..
