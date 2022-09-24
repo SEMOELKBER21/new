@@ -17292,18 +17292,17 @@ return send(msg_chat_id, msg_id, "⋆ Link Group : \n["..Get_Chat.title.. ']('..
 end
 end
 end
-if text == '/start' then
+if text == '/start' or text == "رجوع ⋆" then
 local photo = LuaTele.getUserProfilePhotos(itsFast)
 Redis:sadd(Fast..'Num:User:Pv',msg.sender.user_id)  
 if not msg.Devss then
 if not Redis:get(Fast.."Start:Bot") then
-local CmdStart = '*\n⁕ أهلآ بك في بوت '..(Redis:get(itsFast.."Fast:Name:Bot") or "سيمو")..
-'\n⁕ اختصاص البوت حماية المجموعات'..
-'\n⁕ لتفعيل البوت عليك اتباع مايلي ...'..
-'\n⁕ اضف البوت الى مجموعتك'..
-'\n⁕ ارفعه ادمن {مشرف}'..
-'\n⁕ ارسل كلمة { تفعيل } ليتم تفعيل الجروب'..
-'\n⁕ مطور البوت {@'..UserSudo..'}*'
+local CmdStart = '\n⋆ مرحبا انا بوت '..(Redis:get(Fast.."Name:Bot") or "تيركس")..
+'\n⋆ اختصاصي حمايه المجموعات'..
+'\n⋆ كما احتوي ايضا علي مميزات خدميه'..
+'\n⋆ للتفعيل اضفني مشرف في مجموعتك'..
+'\n⋆ وبعدها قم بكتابه كلمه تفعيل'..
+'\n⋆ لفتح كيبورد الاعضاء: /keb '..''
 if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
