@@ -13036,9 +13036,6 @@ local Text =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text =  𝁂Developer ⋮ , url = "https://t.me/S_E_M_O_E_L_K_B_E_R"},{text =  𝁂Developer ⋮ , url = "https://t.me/WORLED_SEMO"}
-},
-{
 {text =  𝁂Source ElngOoM ⋮ , url = "https://t.me/SSE_MO"}
 },
 }
